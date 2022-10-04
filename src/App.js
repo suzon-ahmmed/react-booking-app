@@ -1,10 +1,19 @@
-
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Hotel from "./components/pages/Hotel";
+import Home from "./components/pages/Home";
+import HotelList from "./components/pages/HotelList";
+import Layout from "./components/component/Layout";
 function App() {
   return (
-    <div className="text-2xl text-center text-gray-700">
-React Booking App with tailwindcss
-    </div>
+    <Router>
+      <Layout>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/hotels" element={<HotelList />} />
+          <Route exact path="/hotel/:id" element={<Hotel />} />
+        </Routes>
+      </Layout>
+    </Router>
   );
 }
 
