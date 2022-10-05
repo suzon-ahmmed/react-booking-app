@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         //top background
         'blue-top': '#003580',
+        'blue-hover': '#ffffff1a',
         //socil media icon
         'github': '#171515',
         'linkedin': '#1d66c2',
@@ -21,6 +22,10 @@ module.exports = {
     },
     container: {
       center: true,
+      padding: {
+        DEFAULT: '1rem',
+        sm: '0rem',
+      }
     },
   },
   plugins: [],

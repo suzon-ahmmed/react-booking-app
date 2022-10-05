@@ -3,8 +3,34 @@
 @tailwind components;
 
 /* Custom layer */
-main {
+body {
   @apply antialiased text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-900;
+}
+
+/* @media (min-width: 640px) {
+  .custom-container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .custom-container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .custom-container {
+    max-width: 1024px;
+  }
+} */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1110px;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1110px;
+  }
 }
 
 .bg-custom-grd {
